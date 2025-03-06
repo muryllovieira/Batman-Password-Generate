@@ -4,6 +4,8 @@ import { StatusBar } from 'expo-status-bar';
 import styles from './Style'
 import { Menu } from "../../components/Menu/Menu";
 import { BatmanLogo } from "../../components/BatmanLogo/BatmanLogo";
+import { BatmanTextInput } from "../../components/BatmanTextInput/BatmanTextInput";
+import { BatmanButton } from "../../components/BatmanButton/BatmanButton";
 
 export default function Home() {
     return (
@@ -12,8 +14,11 @@ export default function Home() {
                 <BatmanLogo/>
             </View>
             
-            <Text>Open up App.tsx to start working on your app!</Text>
-            <StatusBar style="auto" />
+            <View style={styles.inputContainer}>
+                <BatmanButton/>
+            </View>
+
+            <StatusBar style="light" />
         </View>
     )
 }
